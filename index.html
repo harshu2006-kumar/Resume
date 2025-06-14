@@ -1,0 +1,208 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .resume-container {
+      max-width: 700px;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      color: #333;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .header {
+      background-color: #6a0dad;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      padding: 20px 10px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .header .job-title {
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .profile, .skills, .education, .projects, .Certificates {
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #6a0dad;
+      border-bottom: 2px solid #6a0dad;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skills-list ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .skills-list ul li {
+      margin: 5px 0;
+    }
+
+    .projects ul,
+    .Certificates ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .projects ul li,
+    .Certificates ul li {
+      margin: 5px 0;
+    }
+
+    .projects ul li a,
+    .Certificates ul li a {
+      color: #6a0dad;
+      text-decoration: none;
+    }
+
+    .projects ul li a:hover,
+    .Certificates ul li a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .resume-container {
+        padding: 15px;
+      }
+
+      .header h1 {
+        font-size: 1.6em;
+      }
+
+      .header .job-title {
+        font-size: 1em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      .skills-list {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1.4em;
+      }
+
+      .header .job-title {
+        font-size: 0.95em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      .resume-container {
+        padding: 12px;
+      }
+
+      .skills-list ul li,
+      .projects ul li,
+      .Certificates ul li {
+        font-size: 0.95em;
+      }
+
+      .contact-info p {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-container">
+    <div class="header">
+      <h1>HARSHINI</h1>
+      <p class="job-title">Aspiring Web Developer</p>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> +91 909208060</p>
+        <p><strong>Email:</strong> harshinidsm06@gmail.com</p>
+        <p><strong>Location:</strong> Kumbakonam, Tamil Nadu</p>
+      </div>
+    </div>
+
+    <div class="profile">
+      <h2>Profile</h2>
+      <p>Highly motivated and detail-oriented Bachelor of Computer Application (BCA) student with a passion for innovative technology solutions. Currently, I am expanding my skill set in Full-stack Development, leveraging my analytical and problem-solving skills to create dynamic web applications.</p>
+    </div>
+
+    <div class="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>C/C++</li>
+          <li>Java</li>
+          <li>Javascript</li>
+          <li>Visual Basic</li>
+          <li>MS office</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="education">
+      <h2>Education</h2>
+      <p><strong>SSLC:</strong> Passed due to COVID-19 guidelines</p>
+      <p><strong>HSC:</strong> 81.5%</p> 
+      <p><strong>BCA:</strong> In progress</p>
+    </div>
+
+    <div class="Certificates">
+      <h2>Certificates</h2>
+      <ul>
+        <li><a href="robotics.jpg" target="_blank">ROBOTICS Certificate</a></li>
+        <li><a href="ncc.jpg" target="_blank">NCC Certificate</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
